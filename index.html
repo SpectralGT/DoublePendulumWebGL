@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<html>
+	<head>
+		<title>Vealize | Visualise Everything at one place</title>
+		<link rel="stylesheet" type="text/css" href="css/pendulum.css" />
+	</head>
+	<body>
+		<div id="main" class="main">
+			<div class="mainTitle">
+				<h1>
+					<span class="titleP"> Double Pendulum </span>
+					Visualization
+				</h1>
+			</div>
+			<div class="rowWrap">
+				<div class="pend">
+					<canvas id="c2d"> </canvas>
+					<canvas id="c3d"> </canvas>
+				</div>
+				<div class="controls">
+					<h2>Controls</h2>
+					<span class="first">
+						Press
+						<span class="controlKey"> N </span>
+						to add new pendulum
+					</span>
+					<br />
+					<span>
+						Press
+						<span class="controlKey"> R </span>
+						to delete recent pendulum
+					</span>
+					<br />
+					<span>
+						Press
+						<span class="controlKey"> SPACE </span>
+						to start/ stop pendulum
+					</span>
+				</div>
+			</div>
+		</div>
+		<script src="index.js"></script>
+	</body>
 </html>
